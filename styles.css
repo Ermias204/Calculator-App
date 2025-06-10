@@ -1,0 +1,82 @@
+/* CSS for a simple calculator layout */
+body {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.calculator {
+    background-color: #1c1b29;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+}
+
+.display {
+    background-color: #2e3362;
+    color: white;
+    text-align: right;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    min-height: 40px;
+}
+
+.keypad {
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 70%;
+}
+
+.operators {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 28%;
+    align-content: start;
+}
+
+.btn {
+    padding: 18px;
+    font-size: 18px;
+    border: none;
+    border-radius: 40px;
+    background-color: #333345;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #4b4b61;
+}
+
+.btn.op {
+    background-color: #f49b1e;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.op:hover {
+    background-color: #f7b343;
+}
+
+.equal {
+    background-color: #bcbcbc;
+    color: black;
+    grid-column: span 2;
+    padding: 18px 0;
+}
